@@ -15,7 +15,11 @@ struct
 	int edad;
 	char telefono[20];
 }typedef Censista;
-
+/// @fn int cargarCensistas(eCensista*)
+/// @brief carga los censistas hardcodeados
+///
+/// @param lista
+/// @return
 int mostrarListaCensista(Censista* listaCensista, int numero);
 
 

@@ -16,6 +16,15 @@ struct
 	char telefono[20];
 }typedef Censista;
 
+/**
+ * @brief muentra la lista de censista por pantalla
+ *
+ * @pre
+ * @post
+ * @param listaCensista
+ * @param numero
+ * @return
+ */
 int mostrarListaCensista(Censista* listaCensista, int numero);
 
 

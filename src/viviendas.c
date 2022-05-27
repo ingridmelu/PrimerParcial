@@ -9,6 +9,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "viviendas.h"
+#include "censistas.h"
 
 int inicializarListaViviendas(Vivienda* listaViviendas, int tamanio)
 {
@@ -120,8 +121,24 @@ int mostrarListaViviendas(Vivienda listaViviendas[], int tamanio)
 	{
 		if(listaViviendas[i].idVivienda != -1)
 		{
-			printf("%s \t\t\t%d \t\t\t\t%d \t\t\t\t  %d \t\t\t\t %d \t\t\t%d\n", listaViviendas[i].calle, listaViviendas[i].cantidadDePersonas,
-			listaViviendas[i].cantidadDeHabitaciones, listaViviendas[i].tipoDeVivienda, listaViviendas[i].legajoCensista, listaViviendas[i].idVivienda);
+			if(listaViviendas[i].legajoCensista == 100)
+			{
+				printf("100, ANA, 34 , 1203-2345\n");
+				printf("%s \t\t\t%d \t\t\t\t%d \t\t\t\t  %d \t\t\t\t %d \t\t\t%d\n", listaViviendas[i].calle, listaViviendas[i].cantidadDePersonas,
+							listaViviendas[i].cantidadDeHabitaciones, listaViviendas[i].tipoDeVivienda, listaViviendas[i].legajoCensista, listaViviendas[i].idVivienda);
+			}
+			else if(listaViviendas[i].legajoCensista == 101)
+			{
+				printf("{101, JUAN, 24, 43015-4678\n");
+				printf("%s \t\t\t%d \t\t\t\t%d \t\t\t\t  %d \t\t\t\t %d \t\t\t%d\n", listaViviendas[i].calle, listaViviendas[i].cantidadDePersonas,
+							listaViviendas[i].cantidadDeHabitaciones, listaViviendas[i].tipoDeVivienda, listaViviendas[i].legajoCensista, listaViviendas[i].idVivienda);
+			}
+			else
+			{
+				printf("{102, SOL, 37, 5902-37487}\n");
+				printf("%s \t\t\t%d \t\t\t\t%d \t\t\t\t  %d \t\t\t\t %d \t\t\t%d\n", listaViviendas[i].calle, listaViviendas[i].cantidadDePersonas,
+							listaViviendas[i].cantidadDeHabitaciones, listaViviendas[i].tipoDeVivienda, listaViviendas[i].legajoCensista, listaViviendas[i].idVivienda);
+			}
 		}
 	}
 	return 0;

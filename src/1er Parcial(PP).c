@@ -26,6 +26,7 @@ int main(void)
 	int buscarPosicion;
 	int idABuscar;
 	int removerVivienda;
+	int contadorCensistas;
 
 	int idVivienda = 20000;
 	char auxCalle[25];

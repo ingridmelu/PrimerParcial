@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "censistas.h"
+#include "viviendas.h"
 
 int mostrarListaCensista(Censista listaCensista[], int numero)
 {
@@ -21,3 +21,12 @@ int mostrarListaCensista(Censista listaCensista[], int numero)
 	}
 	return 0;
 }
+int censistasConMasCensos(Censista* listaCensistas, Vivienda* listadoViviendas, int tamanio)
+{
+	int contadorJuan=0;
+	int contadorSol=0;
+	int contadorAna=0;
+
+
+}
+
